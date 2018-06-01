@@ -2,7 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/viajes.css">
+    <link rel="stylesheet" type="text/css" href="css/googleMapStyles.css">
+
     <title>Map My Trip</title>
   </head>
   <body onload="initPrueba()">
@@ -11,10 +15,10 @@
 	<script src="js/googleMapFunctions.js"></script>
 
     <h1>Todos los Viajes</h1>
-    <div>
-      <h1>Espacio para el mapa con todos los puntos</h1>
+      <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+      <div id="map"></div>
 
-    </div>
+
 
     <button type="button" name="button">Todos los viajes</button>
 
@@ -29,7 +33,7 @@
     </div>
 
     <div>
-      <table style="width:100%">
+      <table class="table">
  <tr>
    <th>Fecha Inicio</th>
    <th>Fecha Fin</th>
@@ -53,7 +57,7 @@
 
     <div>
       <h3>Información Adicional</h3>
-      <table>
+      <table class="table">
         <tr>
           <th>Llave</th>
           <th>Valor</th>
@@ -67,6 +71,7 @@
       <button type="button" name="button">Guardar Cambios</button>
 
     </div>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzqZFcPsNtUIES0WkG0-fJSPbFNWMuw24&libraries=places&callback=initAutocomplete"
+         async defer></script>
   </body>
 </html>
