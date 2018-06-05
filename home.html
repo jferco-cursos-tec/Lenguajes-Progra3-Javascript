@@ -3,12 +3,14 @@
 <head>
 	<title>Map My Trip</title>
 	<meta charset="utf-8">
+	 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 </head>
 <body onload="initPrueba()">
   <!-- External JavaScripts -->
-  <script src="js/homeModule.js"></script>
-<script src="js/googleMapFunctions.js"></script>
+  <script src="./js/homeModule.js"></script>
+<script src="./js/googleMapFunctions.js"></script>
 	<h1>Map My Trip | Menú Principal</h1>
 
 	<div>
@@ -22,7 +24,7 @@
 			<button type="button" name="button"> Seleccionar Archivo</button>
 		</span>
 		<span>
-			<button type="button" name="button">Visualizar Mapa</button>
+			<button onclick="app.homeModule.openMap()" type="button" name="button">Visualizar Mapa</button>
 		</span>
 	</div>
 	<span>
